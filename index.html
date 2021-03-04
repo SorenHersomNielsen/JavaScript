@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="app">
         <input type="text" v-model.text="text" placeholder="Word">
         <button id="button" v-on:click="words"> Show it</button>
-        <ol id="outputField" class="list-group">
-           <li class="list-group-item list-group-item-primary" >
-            <span class="badge">1</span> {{result}} 
-           </li> 
-           <li class="list-group-item list-group-item-warning">
-            <span class="badge">2</span> {{result1}}
-           </li>
-           <li class="list-group-item list-group-item-danger">
-            <span class="badge">3</span> {{result2}}
-           </li>
-        </ol>
-    </div>
 
+        <ol id="outputField" class="list-group">
+            <li class="list-group-item list-group-item-primary">
+                <span class="badge">1</span> {{result}}
+            </li>
+            <li class="list-group-item list-group-item-warning">
+                <span class="badge">2</span> {{result1}}
+            </li>
+            <li class="list-group-item list-group-item-danger">
+                <span class="badge">3</span> {{result2}}
+            </li>
+        </ol>
+
+        <table class="table table-striped">
+            <tr>
+
+                <td>1</td>
+                <td>{{result}}</td>
+
+            </tr>
+            <tr>
+
+                <td>2</td>
+                <td>{{result1}}</td>
+
+
+            <tr>
+
+                <td>3</td>
+                <td>{{result2}}</td>
+            </tr>
+        </table>
+    </div>
     <script src="index.js"></script>
 </body>
+
 </html>
